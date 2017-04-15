@@ -1,0 +1,68 @@
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	color: #111111;
+}
+.eyecatcher {
+	text-align: center;
+	font-style: italic;
+	font-size: 1.2rem;
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	margin-top: 80px;
+}
+
+.-struct-header {
+	position: relative;
+	height: 150px;
+	border-bottom: 1px solid #c2c2c2;
+}
+.-struct-sidebar {
+	border-right: 1px solid #c2c2c2;
+}
+#title {
+	position: relative;
+
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 0.5rem;
+	line-height: 150px;
+}
+#title-underline {
+	display: block;
+	margin: 0 auto;
+	margin-top: -66px;
+	width: 150px;
+	height: 2px;
+	background-color: #e1382f;
+}
+#time {
+	position: absolute;
+	top: 1.2rem;
+	right: 1.2rem;
+	color: #959595;
+	font-size: 1.2rem;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0.2rem;
+}
+
+/* Sidebar/Link Formatting */
+.navigation {
+	margin-top: 3rem;
+	margin-left: 3rem;
+	padding: 0;
+	list-style-type: none;
+}
+.nav-item {
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	letter-spacing: 0.15rem;
+}
+.nav-item a {
+	text-decoration: none;
+}
+.nav-item a:hover {
+	text-decoration: underline;
+}

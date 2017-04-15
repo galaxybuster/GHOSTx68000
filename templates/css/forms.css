@@ -1,0 +1,109 @@
+form {
+	background: #FFF;
+	padding: 20px 30px 20px 30px;
+	font-family: "Helvetica Neue", sans-serif;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="file"], 
+input[type="password"], 
+textarea {
+	font-size: 1.0rem;
+	font-weight: 300;
+
+	color: #111111;
+
+	height: 20px;
+	line-height:15px;
+	margin-bottom: 20px;
+	margin-right: 6px;
+	margin-top: 4px;
+	outline: 0 none;
+	padding: 4px 0px 4px 5px;
+	width: 100%;
+
+	border: 1px solid #111111;
+	border-bottom: 2px solid #111111;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+textarea {
+	height:150px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 1.0rem;
+	font-weight: 300;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+}
+
+.-input-label {
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	color: #111111;
+	margin-left: 5px;
+}
+
+.button {
+	height: 20px;
+	text-align: right;
+	float: right;
+	background: #FFF;
+	border: 1px solid #111111;
+	border-bottom: 2px solid #111111;
+	padding: 2px 0px 0px 25px;
+	color: #111111;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	color: #111111;
+}
+.button:hover {
+	cursor: pointer;
+	color: #e1382f;
+	background-color: #EBEBEB;
+	border-color: #ADADAD;
+
+	position: relative;
+	top: 1px;
+	border-bottom-width: 1px;
+}
+
+
+.result {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -12px;
+	text-align: center;
+	font-size: 1.0rem;
+	font-weight: 500;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	color: #e1382f;
+}
+
+
+#pw-forgot {
+	text-align: left;
+	margin-top: -12px;
+	margin-left: 5px;
+	font-size: 1rem;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+
+
+}

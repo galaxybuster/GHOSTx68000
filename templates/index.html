@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+
+		<meta charset="utf8">
+
+		<link rel="stylesheet" type="text/css" href="{{ assets }}css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="{{ assets }}css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="{{ assets }}css/styles.css" />
+	</head>
+	<body>
+		<section class="-struct-header">
+			<h1 id="title">{{ title }}</h1>
+			<span id="title-underline"></span>
+			<span id="time">{{ time }}</span>
+		</section>
+		<section class="grid">
+			<div class="col-1-5 -struct-sidebar">
+				<ul class="navigation">
+					<li class="nav-item"><a href="#">Account</a></li>
+					<li class="nav-item"><a href="#">Inbox</a></li>
+					<li class="nav-item"><a href="#">Inventory</a></li>
+					<li class="nav-item"><a href="#">Encounter Log</a></li>
+					<li class="nav-item"><a href="#">Options</a></li>
+					<li class="nav-item"><a href="logout.php">Logout</a></li>
+				</ul>
+			</div>
+			<div class="col-4-5 -struct-body"></div>
+		</section>
+	</body>
+</html>

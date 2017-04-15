@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }} | Login or Register</title>
+
+		<link rel="stylesheet" type="text/css" href="templates/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="templates/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="templates/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="templates/css/forms.css">
+		<style type="text/css">
+			#container {
+				position: relative;
+				width: 800px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="-struct-header">
+			<h1 id="title">{{ title }}</h1>
+			<span id="title-underline"></span>
+			<span id="time">{{ time }}</span>
+		</section>
+		<p class="eyecatcher">{{ eyecatcher }}</p>
+		<div id="container" class="grid">
+			<form action="" method="POST" class="col-1-2">
+				<p class="result">{{ responseR }}</p>
+				
+				<label>
+					<span class="-input-label">E-mail</span>
+					<input id="name" type="text" name="email" placeholder="email" value="{{ emailR }}" />
+				</label>
+				<label>
+					<span class="-input-label">Username</span>
+					<input type="text" name="username" placeholder="username"  value="{{ usernameR }}" />
+				</label>
+				<label>
+					<span class="-input-label">Password</span>
+					<input type="password" name="password" placeholder="password" />
+				</label>
+				<label>
+					<span class="-input-label">Password (Retype)</span>
+					<input type="password" name="retype" placeholder="confirm password" />
+				</label>
+				<label>
+					<span>&nbsp;</span>
+					<input type="submit" class="button" name="submit-register" value="Register" />
+				</label>
+			</form>
+			<form action="" method="POST" class="col-1-2">
+				<p class="result">{{ response }}</p>
+				
+				<label>
+					<span class="-input-label">E-mail</span>
+					<input id="name" type="text" name="email" placeholder="email" value="{{ email }}" />
+				</label>
+				<label>
+					<span class="-input-label">Password</span>
+					<input type="password" name="pass" placeholder="password" />
+					<p id="pw-forgot"><a href="forgot.php">FORGOT?</a></p>
+				</label>
+				<label>
+					<span>&nbsp;</span>
+					<input type="submit" class="button" name="submit-login" value="Login" />
+				</label>
+				
+			</form>
+		</div>
+	</body>
+</html>
