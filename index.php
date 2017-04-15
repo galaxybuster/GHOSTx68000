@@ -25,6 +25,14 @@
 	);
 
 	if (isset($_SESSION['user'])) {
+		/*
+		 * ACTUAL MEAT OF GAME STUFF
+		**/
+		include 'UserManager.php';
+		include 'LocationManager.php';
+		$location = UserManager::userGetLocation($_SESSION['user']['id']);
+		$export['location'] = LocationManager::getLocationInfo($location);
+
 		echo $twig->render('index.html', $export);
 	} else {
 		$export['eyecatcher'] = $catchcopy[mt_rand(0, sizeof($catchcopy) - 1)];
@@ -35,6 +43,11 @@
 			$success = $user->login($_POST['email'], $_POST['pass']);
 			// $user->login handles the session, so i think we're done here
 			if ($success) {
+				// add user to active users table.
+				include 'UserManager.php';
+				UserManager::initiateStatus($_SESSION['user']['id']);
+
+				// redirect to this page again with the session now set.
 				header("Location: ".$GLOBALS['config']['domain'].$GLOBALS['config']['directory']."?profile=".$_SESSION['user']['username']);
 				die("Redirecting");
 			} else {
